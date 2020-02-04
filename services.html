@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plumber | Services</title>
+    <meta name="description" content="Plumber website by Dusan Randjelovic">
+    <meta name="keywords" content="dusan randjelovic, plumber">
+    <meta name="author" content="Dusan Randjelovic | dusanrandjelovic92@gmail.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+  </head>
+  <body>
+    <header>
+    <div>
+    <img src="logo.png" alt="DuRa logo">
+    <h3>Plumber</h3>
+    <h3 class="bojacrv">065-888-11-96</h3>
+      </div>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html"><strong>Services</strong></a>
+        <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="navigacija()">&#9776;</a>
+        </nav>
+      </header>
+      <div id="pozadina">
+       <div class="pozslika">
+          <h1>SERVICES</h1>
+          <p>_____</p>
+          </div>
+
+          <div class="pozcrvena">
+            <p>EMERGENCY CALL - 24/7</p>
+              <p>+1 910-626-8525</p>
+            </div>
+        </div>
+        <main>
+
+              <div>
+               <img src="alat.jpg" alt="alat">
+               <h2>DRAIN CLEANING & REPAIRS</h2>
+               <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                  luctus nec
+                 ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+               <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet.
+                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+               <p><strong>LUCTUS NEC ULLAMCORPER MATTIS, PULVINAR DAPIBUS LEO. PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET</strong></p>
+              </div>
+
+              <div>
+               <img src="alat2.jpg" alt="alat">
+               <h2>GAS LINE SERVICES</h2>
+               <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                  luctus nec
+                 ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+               <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet.
+                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+               <p><strong>LUCTUS NEC ULLAMCORPER MATTIS, PULVINAR DAPIBUS LEO. PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET</strong></p>
+              </div>
+
+              <div>
+               <img src="alat2.jpg" alt="alat">
+               <h2>PLUMBING SERVICES</h2>
+               <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                  luctus nec
+                 ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+               <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet.
+                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+               <p><strong>LUCTUS NEC ULLAMCORPER MATTIS, PULVINAR DAPIBUS LEO. PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET</strong></p>
+              </div>
+
+              <div>
+               <img src="alat.jpg" alt="alat">
+               <h2>HEATING & COOLING</h2>
+               <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                  luctus nec
+                 ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+               <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet.
+                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+               <p><strong>LUCTUS NEC ULLAMCORPER MATTIS, PULVINAR DAPIBUS LEO. PROIN GRAVIDA NIBH VEL VELIT AUCTOR ALIQUET</strong></p>
+              </div>
+
+        </main>
+
+      <footer>
+        <p>Copyright © 2019 Plumber | Powered by Plumber</p>
+      </footer>
+
+      <script>
+      function navigacija() {
+          var meni = document.getElementById("myTopnav");
+          if (meni.className === "topnav") {
+              meni.className += " responsive";
+          } else {
+              meni.className = "topnav";
+          }
+      }
+
+      $(function() {
+          $(window).on("scroll", function() {
+              if($(window).scrollTop() > 30) {
+                  $("header").addClass("active");
+                  $("header").removeClass("inactive");
+              } else {
+                 $("header").removeClass("active");
+                 $("header").addClass("inactive");
+              }
+          });
+      });
+      </script>
+  </body>
+</html>
